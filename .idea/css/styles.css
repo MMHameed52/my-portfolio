@@ -4,9 +4,10 @@ main, main.container {
 }
 
 main.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 body {
@@ -133,5 +134,21 @@ form textarea:focus {
     background-color: #0056b3;
     border-color: #004a99;
     color: white;
+}
+
+main ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+main ul li::before {
+    content: "•";
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+    width: 1em;
+    margin-right: 0.5em;
+    text-align: center;
 }
 
