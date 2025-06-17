@@ -152,3 +152,44 @@ main ul li::before {
     text-align: center;
 }
 
+/* ====== Welcome Page Styles ====== */
+.welcome-container {
+    padding: 5rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+    margin-top: 1.5rem;
+}
+
+.welcome-subtitle {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.welcome-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.welcome-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
