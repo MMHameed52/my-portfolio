@@ -193,3 +193,37 @@ main ul li::before {
     max-width: 600px;
     margin: 0 auto;
 }
+
+/* About Page Styling */
+.about-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s;
+}
+
+.about-section:hover {
+    transform: translateY(-2px);
+}
+
+.bg-light-alt {
+    background-color: #f3f6fa;
+}
+
+/* Headings inside sections */
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
