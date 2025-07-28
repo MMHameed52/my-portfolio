@@ -5,54 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Resume | Mohammad Mustafaa Hameed</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/theme.js"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/include.js" defer></script>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-light shadow-sm">
-    <div class="container d-flex flex-column align-items-center">
-        <!-- Row: Name + Nav Links -->
-        <div class="d-flex flex-wrap justify-content-center align-items-center w-100 gap-3 py-2">
-            <a class="navbar-brand fw-bold mb-0" href="index.html">Mohammad Mustafaa Hameed</a>
-
-            <!-- Nav Links -->
-            <a class="nav-link px-3" href="index.html">Home</a>
-            <a class="nav-link px-3" href="about.html">About</a>
-            <a class="nav-link px-3" href="resume.html">Resume</a>
-            <a class="nav-link px-3" href="projects.html">Projects</a>
-            <a class="nav-link px-3" href="blog.html">Blog</a>
-            <a class="nav-link px-3" href="contact.html">Contact</a>
-        </div>
-    </div>
-    <div class="theme-switch-wrapper ms-3">
-        <label class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider round"></span>
-        </label>
-        <span id="theme-label">Dark Mode</span>
-    </div>
-</nav>
+<!-- Include Header -->
+<div id="include-header"></div>
 
 <!-- Resume Section -->
 <main class="resume-page text-center">
-    <h1 class="resume-heading">My Resume</h1>
+    <h1 class="resume-heading mt-5">My Resume</h1>
     <hr class="section-divider">
 
     <!-- Embedded PDF -->
-    <div class="resume-frame">
-        <iframe src="assets/Mustafaa_Resume2025.pdf"></iframe>
+    <div class="resume-frame my-4">
+        <iframe src="assets/Mustafaa_Resume2025.pdf" title="Resume PDF" width="100%" height="800px" style="border: none;"></iframe>
     </div>
 
     <!-- Download Button -->
-    <a href="assets/Mustafaa_Resume2025.pdf" class="btn btn-primary download-btn mt-4" download>
+    <a href="assets/Mustafaa_Resume2025.pdf" class="btn btn-primary download-btn mt-3" download>
         Download Resume
     </a>
 </main>
 
-<!-- Footer -->
-<footer class="text-center p-3 bg-dark text-white mt-5">
-    <p>© 2025 Mohammad Mustafaa Hameed. All rights reserved.</p>
-</footer>
+<!-- Include Footer -->
+<div id="include-footer"></div>
+
 </body>
 </html>

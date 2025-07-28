@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Mohammad Mustafaa Hameed</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/theme.js" defer></script>
+    <script src="js/include.js" defer></script>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-light shadow-sm">
-    <div class="container d-flex flex-column align-items-center">
-        <!-- Row: Name + Nav Links -->
-        <div class="d-flex flex-wrap justify-content-center align-items-center w-100 gap-3 py-2">
-            <a class="navbar-brand fw-bold mb-0" href="index.html">Mohammad Mustafaa Hameed</a>
+<!-- Dynamic Header -->
+<div id="include-header"></div>
 
-            <!-- Nav Links -->
-            <a class="nav-link px-3" href="index.html">Home</a>
-            <a class="nav-link px-3" href="about.html">About</a>
-            <a class="nav-link px-3" href="resume.html">Resume</a>
-            <a class="nav-link px-3" href="projects.html">Projects</a>
-            <a class="nav-link px-3" href="blog.html">Blog</a>
-            <a class="nav-link px-3" href="contact.html">Contact</a>
-        </div>
-    </div>
-    <div class="theme-switch-wrapper ms-3">
-        <label class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider round"></span>
-        </label>
-        <span id="theme-label">Dark Mode</span>
-    </div>
-</nav>
-
-<!-- HMain -->
+<!-- Main Welcome Section -->
 <main class="welcome-container text-center">
     <!-- Profile Image -->
-    <img src="images/profile.jpeg" alt="Profile Photo" class="welcome-img mb-4">
+    <img src="images/profile.jpeg" alt="Profile Photo" class="welcome-img mb-4" />
 
     <!-- Welcome Message -->
     <div class="welcome-text">
@@ -49,11 +28,8 @@
     </div>
 </main>
 
-
-<!-- Footer -->
-<footer class="text-center p-3 bg-dark text-white mt-5">
-    <p>© 2025 Mohammad Mustafaa Hameed. All rights reserved.</p>
-</footer>
+<!-- Dynamic Footer -->
+<div id="include-footer"></div>
 
 </body>
 </html>
