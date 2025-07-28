@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Blog | Mohammed Mustafaa Hameed</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/theme.js"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/scripts.js" defer></script> <!-- NEW: loads posts -->
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-light shadow-sm">
     <div class="container d-flex flex-column align-items-center">
-        <!-- Row: Name + Nav Links -->
         <div class="d-flex flex-wrap justify-content-center align-items-center w-100 gap-3 py-2">
             <a class="navbar-brand fw-bold mb-0" href="index.html">Mohammad Mustafaa Hameed</a>
-
-            <!-- Nav Links -->
             <a class="nav-link px-3" href="index.html">Home</a>
             <a class="nav-link px-3" href="about.html">About</a>
             <a class="nav-link px-3" href="resume.html">Resume</a>
@@ -37,30 +35,8 @@
 <!-- Blog Section -->
 <main class="container my-5">
     <h1 class="text-center mb-4">Blog & Updates</h1>
-    <p class="text-center">Check back soon for my latest posts on programming, projects, and tech insights!</p>
-
-    <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
-        <!-- Placeholder Blog Post 1 -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Coming Soon: My First Blog Post</h5>
-                    <p class="card-text"><small class="text-muted">Expected: Summer 2025</small></p>
-                    <p class="card-text">I’ll be writing about my journey building this portfolio site, lessons learned in HTML/CSS, and tips for beginner developers.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Placeholder Blog Post 2 -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Coming Soon: Logic in Programming</h5>
-                    <p class="card-text"><small class="text-muted">Expected: Summer 2025</small></p>
-                    <p class="card-text">An upcoming post exploring how logic and discrete math connect with real programming problems.</p>
-                </div>
-            </div>
-        </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-4" id="blog-list">
+        <!-- Posts will be injected here by JS -->
     </div>
 </main>
 
@@ -68,5 +44,6 @@
 <footer class="text-center p-3 bg-dark text-white mt-5">
     <p>© 2025 Mohammad Mustafaa Hameed. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
