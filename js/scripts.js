@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(posts => {
             posts.forEach(post => {
                 const postElement = document.createElement('div');
-                postElement.classList.add('blog-post');
+                postElement.classList.add('col');
 
                 postElement.innerHTML = `
-          <h3>${post.title}</h3>
-          <p class="blog-date">${post.date}</p>
-          <p>${post.content}</p>
-          <hr />
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">${post.title}</h5>
+              <p class="card-text"><small class="text-muted">${post.date}</small></p>
+              <p class="card-text">${post.content}</p>
+            </div>
+          </div>
         `;
 
                 blogList.appendChild(postElement);

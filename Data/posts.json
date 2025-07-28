@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Implementing Light/Dark Mode (Part One)",
+    "date": "2025-07-28",
+    "content": "To create a light/dark mode switcher for my website, I added a toggle switch to the navigation bar. When clicked, it switches the theme by adding or removing a 'dark-mode' class on the <body>. I used localStorage to remember the user's preference across sessions. I also ensured the toggle worked with dynamically loaded headers by delaying the theme script until after DOM insertion using a function call from include.js."
+  },
+  {
+    "title": "Dynamic Blog Section with JSON (Part Two)",
+    "date": "2025-07-28",
+    "content": "For this feature, I created a separate JSON file (`posts.json`) to store all my blog post data. Using JavaScript, I fetched the file with `fetch()` and parsed each post into a Bootstrap-styled card. I used a loop to dynamically insert each blog post into the blog page. This method keeps the blog content separate from HTML and makes it easy to update posts without editing the HTML directly."
+  }
+]
