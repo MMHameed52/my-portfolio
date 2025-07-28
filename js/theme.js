@@ -1,17 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("theme-toggle");
+    const toggleInput = document.getElementById("theme-toggle");
+    const label = document.getElementById("theme-label");
     const currentTheme = localStorage.getItem("theme") || "light";
 
     document.body.classList.add(`${currentTheme}-mode`);
-    toggleButton.textContent = currentTheme === "dark" ? "Light Mode" : "Dark Mode";
+    toggleInput.checked = currentTheme === "dark";
+    label.textContent = currentTheme === "dark" ? "Light Mode" : "Dark Mode";
 
-    toggleButton.addEventListener("click", () => {
-        const isDark = document.body.classList.contains("dark-mode");
-        document.body.classList.toggle("dark-mode");
-        document.body.classList.toggle("light-mode");
+    toggleInput.addEventListener("change", () => {
+        const isDark = toggleInput.checked;
 
-        const newTheme = isDark ? "light" : "dark";
+        document.body.classList.toggle("dark-mode", isDark);
+        document.body.classList.toggle("light-mode", !isDark);
+
+        const newTheme = isDark ? "dark" : "light";
         localStorage.setItem("theme", newTheme);
-        toggleButton.textContent = isDark ? "Dark Mode" : "Light Mode";
+        label.textContent = isDark ? "Light Mode" : "Dark Mode";
     });
 });
